@@ -1,0 +1,214 @@
+:root {
+  --background-color: hsl(216, 12%, 8%);
+  --container-color: hsl(216, 12%, 54%);
+  --title-color: hsl(0, 100%, 100%);
+  --card-background-color: hsl(213, 19%, 18%);
+  --description-color: hsl(217, 12%, 63%);
+  --icon-color: hsla(0, 2%, 31%, 0.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--title-color);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+}
+.card {
+  width: 350px;
+  height: 400px;
+  background-color: var(--card-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+}
+.icon-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.icon-star {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: block;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  background-color: #02020357; /* dark circle */
+  box-shadow: 0px 0px 0px 10px rgba(2, 2, 2, 0.13);
+  margin-top: 3rem;
+}
+
+.title-container {
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 0rem; /* reduced from 8rem */
+  color: var(--title-color);
+}
+.title-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+  justify-content: left;
+  margin-right: 7rem;
+  margin-bottom: 0.5rem; /* add this if not present */
+}
+.description-container {
+  width: 100%;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--description-color);
+}
+
+.description-container p {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.rating-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+button.rating {
+  background-color: #232a34; /* dark background */
+  color: #fff; /* white text */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(2, 2, 2, 0.13);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e75e0f;
+  color: #020203;
+}
+
+button.rating:focus {
+  background-color: #fff;
+  color: #020203;
+}
+
+.submit-button {
+  background-color: #e75e0f;
+  color: #020203; /* dark text */
+  width: 80%;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button.submit-button:hover {
+  background-color: #f5f3ef;
+}
+.hidden {
+  display: none;
+}
+
+.illustration-thank-you {
+  width: 60%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 2.5rem;
+}
+
+.thank-you-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e75e0f;
+  margin-top: 20px;
+  width: 15rem;
+  height: 1.5rem;
+  display: flex;
+  background-color: rgba(2, 2, 2, 0.13);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0.3rem rgba(2, 2, 2, 0.13); /* centered shadow */
+}
+
+.thank-you-description {
+  font-size: 0.9rem;
+  color: var(--description-color);
+  margin-top: 10px;
+  text-align: center;
+}
+.thank-you-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--title-color);
+  margin-top: 20px;
+}
+
+footer {
+  background-color: var(--container-color);
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--background-color);
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .icon-container {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .title-container h1 {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+  .description-container p {
+    font-size: 0.8rem;
+  }
+  button.rating {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+}
