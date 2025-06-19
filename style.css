@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --background-color: hsl(216, 12%, 8%);
   --container-color: hsl(216, 12%, 54%);
@@ -14,7 +16,7 @@
 body {
   background-color: var(--background-color);
   color: var(--title-color);
-  font-family: "Outfit", sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
 }
 .container {
@@ -53,7 +55,7 @@ body {
   position: static;
   align-items: center;
   justify-content: center;
-  background-color: #02020357; /* dark circle */
+  background-color: #02020357; 
   box-shadow: 0px 0px 0px 10px rgba(2, 2, 2, 0.13);
   margin-top: 3rem;
 }
@@ -61,7 +63,7 @@ body {
 .title-container {
   text-align: left;
   font-weight: 400;
-  margin-bottom: 0rem; /* reduced from 8rem */
+  margin-bottom: 0rem; 
   color: var(--title-color);
 }
 .title-container h1 {
@@ -70,7 +72,7 @@ body {
   text-align: left;
   justify-content: left;
   margin-right: 7rem;
-  margin-bottom: 0.5rem; /* add this if not present */
+  margin-bottom: 0.5rem; 
 }
 .description-container {
   width: 100%;
@@ -95,8 +97,8 @@ body {
 }
 
 button.rating {
-  background-color: #232a34; /* dark background */
-  color: #fff; /* white text */
+  background-color: #232a34; 
+  color: #fff; 
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -121,7 +123,7 @@ button.rating:focus {
 
 .submit-button {
   background-color: #e75e0f;
-  color: #020203; /* dark text */
+  color: #020203; 
   width: 80%;
   height: 48px;
   border-radius: 50px;
@@ -161,7 +163,7 @@ button.submit-button:hover {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 0 0 0.3rem rgba(2, 2, 2, 0.13); /* centered shadow */
+  box-shadow: 0 0 0 0.3rem rgba(2, 2, 2, 0.13); 
 }
 
 .thank-you-description {
